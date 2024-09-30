@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соня, с Днём Рождения!</title>
+    <style>
+        /* Оформление страницы в стиле Hello Kitty */
+        body {
+            background-color: #fce4ec;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff4081;
+            margin-top: 50px;
+            animation: fadeIn 3s ease-in-out infinite alternate;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #d81b60;
+            animation: slideIn 4s ease-in-out infinite alternate;
+        }
+
+        /* Анимация для текста */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Hello Kitty изображения */
+        .hello-kitty {
+            width: 120px;
+            height: auto;
+            margin: 20px;
+        }
+
+        /* Анимации для разных картинок */
+        .kitty1 {
+            animation: rotate 6s linear infinite;
+        }
+
+        .kitty2 {
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .kitty3 {
+            animation: scaleUp 4s ease-in-out infinite alternate;
+        }
+
+        .kitty4 {
+            animation: bounce 4s ease-in-out infinite;
+        }
+
+        /* Анимации */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        /* Контейнер для симметричного расположения картинок */
+        .kitty-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Соня, с Днём Рождения!</h1>
+    <p>Желаю тебе много счастья, улыбок и исполнения всех мечтаний!<br>Пусть твой день будет таким же милым, как Hello Kitty!</p>
+
+    <!-- Симметричное расположение Hello Kitty под текстом -->
+    <div class="kitty-container">
+        <img src="https://i.postimg.cc/HsDmcvH6/hello-kitty-Christmas-dog-443536398.jpg" alt="Hello Kitty" class="hello-kitty kitty1">
+        <img src="https://i.postimg.cc/DfbFz3VW/hello-kitty-by-cubur-d5n306l-2221021830.png" alt="Hello Kitty" class="hello-kitty kitty2">
+        <img src="https://i.postimg.cc/6qRNbnVV/93690-Hello-Kitty-3014944740.jpg" alt="Hello Kitty" class="hello-kitty kitty3">
+        <img src="https://i.postimg.cc/RF2BTXtV/03665f1f284c136d1b1b1f77a40df122-998977205.jpg" alt="Hello Kitty" class="hello-kitty kitty4">
+    </div>
+
+</body>
+</html>
+
+
