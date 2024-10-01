@@ -12,19 +12,21 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            overflow-x: hidden; /* Отключаем горизонтальный скролл */
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             color: #ff4081;
             margin-top: 150px; /* Отступ для опускания текста ниже */
             animation: slowFade 5s ease-in-out infinite alternate;
         }
 
         p {
-            font-size: 1.5em;
+            font-size: 1.2em;
             color: #d81b60;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
+            padding: 0 60px; /* Добавляем отступы по бокам */
             animation: slowSlide 6s ease-in-out infinite alternate;
         }
 
@@ -160,8 +162,23 @@
         .kitty-container-bottom {
             display: flex;
             justify-content: center;
-            margin: 30px 0;
+            flex-wrap: wrap; /* Позволяем картинкам переноситься */
+            margin: 80px 0;
         
+        }
+        /* Адаптивные стили для мобильных устройств */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .hello-kitty {
+                width: 90px;
+            }
         }
     </style>
 </head>
