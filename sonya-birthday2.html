@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Соня, с Днём Рождения!</title>
+    <style>
+        /* Оформление страницы в стиле Hello Kitty */
+        body {
+            background-color: #fce4ec;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ff4081;
+            margin-top: 150px; /* Отступ для опускания текста ниже */
+            animation: slowFade 5s ease-in-out infinite alternate;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #d81b60;
+            margin-bottom: 100px;
+            animation: slowSlide 6s ease-in-out infinite alternate;
+        }
+
+        /* Медленная анимация для текста */
+        @keyframes slowFade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slowSlide {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Стили для картинок */
+        .hello-kitty {
+            width: 240px;
+            height: auto;
+            margin: 80px;
+            
+        }
+
+          /* Разные забавные анимации для картинок с хаотичным увеличением и уменьшением */
+          .kitty1 {
+            animation: spinAndScale 1.5s ease-in-out infinite;
+        }
+
+        .kitty2 {
+            animation: flipAndScale 4s ease-in-out infinite;
+        }
+
+        .kitty3 {
+            animation: rotateBounceScale 3s ease-in-out infinite;
+        }
+
+        .kitty4 {
+            animation: flipGrowScale 3s ease-in-out infinite;
+        }
+
+        .kitty5 {
+            animation: wobbleScale 2s ease-in-out infinite;
+        }
+
+        .kitty6 {
+            animation: zoomSpinScale 3s ease-in-out infinite;
+        }
+
+        /* Анимации для картинок */
+        @keyframes spinAndScale {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) scale(3);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        @keyframes flipAndScale {
+            0% {
+                transform: rotateY(0deg) scale(1);
+            }
+            50% {
+                transform: rotateY(180deg) scale(0.5);
+            }
+            100% {
+                transform: rotateY(360deg) scale(1);
+            }
+        }
+
+        @keyframes rotateBounceScale {
+            0% {
+                transform: rotate(0deg) translateY(0) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) translateY(-20px) scale(3);
+            }
+            100% {
+                transform: rotate(360deg) translateY(0) scale(1);
+            }
+        }
+
+        @keyframes flipGrowScale {
+            0% {
+                transform: rotateX(0deg) scale(2);
+            }
+            50% {
+                transform: rotateX(180deg) scale(1);
+            }
+            100% {
+                transform: rotateX(360deg) scale(2);
+            }
+        }
+
+        @keyframes wobbleScale {
+            0%, 100% {
+                transform: translateX(0) rotate(0deg) scale(2);
+            }
+            25% {
+                transform: translateX(-10px) rotate(-10deg) scale(1);
+            }
+            75% {
+                transform: translateX(10px) rotate(10deg) scale(2);
+            }
+        }
+
+        @keyframes zoomSpinScale {
+            0% {
+                transform: scale(3) rotate(0deg);
+            }
+            50% {
+                transform: scale(1) rotate(180deg);
+            }
+            100% {
+                transform: scale(3) rotate(360deg);
+            }
+        }
+
+        /* Контейнеры для картинок сверху и снизу */
+        .kitty-container-top,
+        .kitty-container-bottom {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Картинки сверху -->
+    <div class="kitty-container-top">
+        <img src="https://i.postimg.cc/HsDmcvH6/hello-kitty-Christmas-dog-443536398.jpg" alt="Hello Kitty" class="hello-kitty kitty1">
+        <img src="https://i.postimg.cc/6qRNbnVV/93690-Hello-Kitty-3014944740.jpg" alt="Hello Kitty" class="hello-kitty kitty2">
+        <img src="https://i.postimg.cc/zv3g5YYJ/cc2f73d1006571ce639c505a3306a25f.jpg" alt="Hello Kitty" class="hello-kitty kitty3">
+    </div>
+
+    <!-- Основной текст -->
+    <h1>Соня, с Днём Рождения!</h1>
+    <p>
+        Поздравляю тебя с наступившим вторым днём твоего чудесного праздника!<br>
+        Пусть этот день принесёт ещё больше радости, улыбок и незабываемых моментов!<br>
+        Желаю исполнения всех желаний и самого яркого настроения!<br>
+        Ты — настоящая звезда этого праздника, пусть счастье всегда будет с тобой!<br><br>
+
+        🌟 Пусть каждый миг будет наполнен волшебством, как в сказке!<br>
+        Ты словно солнечный лучик, который согревает всех вокруг своей улыбкой!<br>
+        Пусть радость твоего дня будет такой же яркой, как звёзды на небе, и сладкой, как твои любимые угощения!<br>
+        Ты заслуживаешь самого волшебного дня — пусть каждый миг будет наполнен любовью и смехом! 🌸
+    </p>
+
+    <!-- Картинки снизу -->
+    <div class="kitty-container-bottom">
+        <img src="https://i.postimg.cc/RF2BTXtV/03665f1f284c136d1b1b1f77a40df122-998977205.jpg" alt="Hello Kitty" class="hello-kitty kitty4">
+        <img src="https://i.postimg.cc/260ZP8Jc/24efc59af2c5efc42a378c0ef4fb9d10-3664595427.jpg" alt="Hello Kitty" class="hello-kitty kitty5">
+        <img src="https://i.postimg.cc/DfbFz3VW/hello-kitty-by-cubur-d5n306l-2221021830.png" alt="Hello Kitty" class="hello-kitty kitty6">
+    </div>
+
+</body>
+</html>
